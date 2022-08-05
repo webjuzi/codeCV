@@ -32,7 +32,7 @@
 邮箱:zz.yj@qq.com
 
 #### 支付宝
-![](./zfb.jpg)
+![](http://inav.site/img/zfb.jpg)
 
 #### 微信信
-![](./wx.jpg)
+![](http://inav.site/img/wx.jpg)
