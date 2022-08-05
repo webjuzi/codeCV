@@ -18,7 +18,7 @@
 
 ## 下载方式    
 
-- 本插件github地址:[https://github.com](https://github.com) 自行在 utools 中打包
+- 本插件github地址:[https://github.com/webjuzi/codeCV](https://github.com/webjuzi/codeCV) 自行在 utools 中打包
 
 - `utools` 插件中心搜索 `起个变量名`
 
@@ -32,7 +32,7 @@
 邮箱:zz.yj@qq.com
 
 #### 支付宝
-![](http://ww1.sinaimg.cn/large/007xSf3gly1goklrcbcn3j30el0etjs5.jpg)
+![](./zfb.jpg)
 
 #### 微信信
-![](http://ww1.sinaimg.cn/large/007xSf3gly1goklrjr11xj30fx0g940e.jpg)
+![](./wx.jpg)
