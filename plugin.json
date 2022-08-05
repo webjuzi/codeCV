@@ -1,0 +1,55 @@
+{
+  "preload": "preload.js",
+  "logo": "logo.png",
+  "features": [
+    {
+      "code": "bl",
+      "explain": "输入中文变量名自动转英文",
+      "cmds": [
+        "变量命名"
+      ]
+    },
+    {
+      "code": "xt",
+      "explain": "输入中文变量名自动转英文小驼峰",
+      "cmds": [
+        "小驼峰"
+      ]
+    },
+    {
+      "code": "dt",
+      "explain": "输入中文变量名自动转英文大驼峰",
+      "cmds": [
+        "大驼峰"
+      ]
+    },
+    {
+      "code": "xh",
+      "explain": "输入中文变量名自动转英文下划线",
+      "cmds": [
+        "下划线"
+      ]
+    },
+    {
+      "code": "hx",
+      "explain": "输入中文变量名自动转英文横线",
+      "cmds": [
+        "横线"
+      ]
+    },
+    {
+      "code": "cl",
+      "explain": "输入中文变量名自动转英文常量",
+      "cmds": [
+        "常量"
+      ]
+    },
+    {
+      "code": "appid",
+      "explain": "输入百度输入百度APPID,格式:APPID-密钥",
+      "cmds": [
+        "百度APPID"
+      ]
+    }
+  ]
+}
