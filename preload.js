@@ -254,41 +254,41 @@ let setAppid = (action, searchWord, callbackSetList) => {
 }
 // api
 let apiBaidu = (data) => {
-  let appid = utools.dbStorage.getItem('appid').split('-')
-	let res
-	let xhr = new XMLHttpRequest() // 创建XHR对象
-	xhr.open(
-		// 打开链接
-		'post',
-		'https://fanyi-api.baidu.com/api/trans/vip/translate', // 后端地址
-		false
-	)
-	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded') // 设置请求头
-	xhr.onreadystatechange = function () {
-		if (xhr.readyState == 4 && xhr.status == 200) {
-			res = this.responseText
-		} else {
-      res = 'error-'
+  if(data.q) {
+    let appid = utools.dbStorage.getItem('appid').split('-')
+    let res
+    let xhr = new XMLHttpRequest() // 创建XHR对象
+    xhr.open(
+      // 打开链接
+      'post',
+      'https://fanyi-api.baidu.com/api/trans/vip/translate', // 后端地址
+      false
+    )
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded') // 设置请求头
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        res = this.responseText
+      }
     }
-	}
-	xhr.send(
-		// 设置需要携带到后端的字段，字符串形式
-		'q=' +
-			data.q +
-			'&from=' +
-			'zh' +
-			'&to=' +
-			'en' +
-			'&appid=' +
-			appid[0] +
-			'&salt=' +
-			'1435660288' +
-			'&sign=' +
-			md5JS(`${appid[0]}${data.q}1435660288${appid[1]}`)
-	)
-  if (res.indexOf('error') != -1) {
-    return res
-  } else {
-    return JSON.parse(res).trans_result[0].dst
+    xhr.send(
+      // 设置需要携带到后端的字段，字符串形式
+      'q=' +
+        data.q +
+        '&from=' +
+        'zh' +
+        '&to=' +
+        'en' +
+        '&appid=' +
+        appid[0] +
+        '&salt=' +
+        '1435660288' +
+        '&sign=' +
+        md5JS(`${appid[0]}${data.q}1435660288${appid[1]}`)
+    )
+    if (res.indexOf('error') != -1) {
+      return res
+    } else {
+      return JSON.parse(res).trans_result[0].dst
+    }
   }
 }
