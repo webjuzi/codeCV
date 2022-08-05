@@ -7,6 +7,10 @@
 
 [utools](https://u.tools/) 插件中心搜索 `起个变量名`
 
+## 申请百度Appid:
+
+[百度Appid免费申请](https://hcfy.app/docs/services/baidu-api) 每月五万免费字符,个人完全够用了.
+
 
 ## 功能:
 - 翻译你输入的内容为英文
