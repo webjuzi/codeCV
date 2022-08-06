@@ -109,7 +109,7 @@ window.exports = {
         window.utools.hideMainWindow()
         utools.outPlugin()
 			},
-			placeholder: '请输入百度输入百度APPID,格式:HOW_DO_YOU_DOAPPID-密钥',
+			placeholder: '请输入百度APPID,格式:APPID-密钥',
 		},
   }
 }
