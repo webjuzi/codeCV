@@ -46,7 +46,7 @@
     },
     {
       "code": "appid",
-      "explain": "输入百度输入百度APPID,格式:APPID-密钥",
+      "explain": "请输入百度APPID,格式:APPID-密钥",
       "cmds": [
         "百度APPID"
       ]
