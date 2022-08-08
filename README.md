@@ -41,5 +41,5 @@
 #### 支付宝
 ![](http://inav.site/img/zfb.jpg)
 
-#### 微信信
+#### 微信
 ![](http://inav.site/img/wx.jpg)
