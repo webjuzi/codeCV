@@ -254,7 +254,9 @@ let setAppid = (action, searchWord, callbackSetList) => {
 }
 // api
 let apiBaidu = (data) => {
-  if(data.q) {
+  if (!utools.dbStorage.getItem('appid')) {
+    return 'error-请先设置百度Appid,申请链接看软件介绍(免费的)'
+  } else if(data.q) {
     let appid = utools.dbStorage.getItem('appid').split('-')
     let res
     let xhr = new XMLHttpRequest() // 创建XHR对象
