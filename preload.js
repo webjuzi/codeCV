@@ -237,6 +237,7 @@ let variableNamFun = {
 	},
 }
 function translationFilter(str) {
+  str = str.replace(/(')/giu, '')
 	str = str.replace(/( and | or | the | at | of | was | a )/giu, ' ')
 	str = str.replace(/(\s?ing|\s?ed|\s?ly)$/giu, '')
 	str = str.replace(/^(the )/giu, '')
