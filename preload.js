@@ -273,21 +273,9 @@ let apiBaidu = (data) => {
         res = this.responseText
       }
     }
-    xhr.send(
-      // 设置需要携带到后端的字段，字符串形式
-      'q=' +
-        data.q +
-        '&from=' +
-        'zh' +
-        '&to=' +
-        'en' +
-        '&appid=' +
-        appid[0] +
-        '&salt=' +
-        '1435660288' +
-        '&sign=' +
-        md5JS(`${appid[0]}${data.q}1435660288${appid[1]}`)
-    )
+    const randomNum = Math.floor(Math.random() * 9 + 1) + Math.floor(Math.random() * 10 ** 9).toString().padStart(9, '0') 
+    const md5Str = `${appid[0]}${data.q}${randomNum}${appid[1]}`
+    xhr.send(`q=${data.q}&from=${'zh'}&to=${'en'}&appid=${appid[0]}&salt=${randomNum}&sign=${md5JS(md5Str)}`)
     if (res.indexOf('error') != -1) {
       return res
     } else {
