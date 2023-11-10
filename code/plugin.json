@@ -6,22 +6,37 @@
       "code": "bl",
       "explain": "输入中文变量名自动转英文",
       "cmds": [
-        "变量命名"
-      ]
+        {
+            "type": "over",
+            "label": "变量",
+            "minLength": 1,
+            "maxLength": 500
+        }
+    ]
     },
     {
       "code": "xt",
       "explain": "输入中文变量名自动转英文小驼峰",
       "cmds": [
-        "小驼峰"
-      ]
+        {
+            "type": "over",
+            "label": "小驼峰",
+            "minLength": 1,
+            "maxLength": 500
+        }
+    ]
     },
     {
       "code": "dt",
       "explain": "输入中文变量名自动转英文大驼峰",
       "cmds": [
-        "大驼峰"
-      ]
+        {
+            "type": "over",
+            "label": "大驼峰",
+            "minLength": 1,
+            "maxLength": 500
+        }
+    ]
     },
     {
       "code": "xh",

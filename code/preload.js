@@ -131,6 +131,7 @@ function copyText(text) {
 // 初始化
 let load = (action, callbackSetList) => {
 	callbackSetList([])
+	toEnglish(action, action.payload, callbackSetList)	  
 }
 // bl
 let toEnglish = (action, searchWord, callbackSetList) => {
@@ -281,5 +282,5 @@ let apiBaidu = (data) => {
     } else {
       return JSON.parse(res).trans_result[0].dst
     }
-  }
+  }error-请先设置百度Appid,申请链接看软件介绍(免费的)
 }
